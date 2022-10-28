@@ -1,6 +1,128 @@
-body {
-    background-color: black;
+ * {
+    padding: 0%;
+    margin: 0%;
   }
+  
+  body {
+    background-color:rgb(0, 0, 0);
+  }
+  
+  
+  header{
+    width: 100%;
+  }
+  
+  
+  /* NAVEGADOR */
+  .navegacion{
+    width: 100%;
+    height: 150px;
+    margin: 20px auto;
+    background: black;
+  }
+  
+  .navegacion ul{
+    list-style: none;
+  }
+  
+  .menu > li{
+    position: relative;
+    display: inline-block;
+  }
+  
+  .menu > li > a{
+    display: block;
+    padding: 56px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  
+  .menu li a:hover{
+    color: #a02e33;
+    transition: all .3s;
+  }
+  
+  /* Submenu*/
+  
+  .submenu{
+    position: absolute;
+    background: black;
+    width: 120%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+  }
+  
+  .submenu li a{
+    display: block;
+    padding: 15px;
+    margin-left: -45px;
+    color: #fff;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  
+  div img {
+    position: absolute;
+    width: 18%;
+    top: 1%;
+    left: 40%;
+  }
+  
+  .redes {
+    padding-left: 40px;
+  }
+  
+  .logoIg {
+    position: absolute;
+    width: 11%;
+    margin-left: 55%;
+    margin-top: 50px;
+  }
+  
+  
+  .logoTw {
+    position: absolute;
+    width: 20%;
+    margin-left:58%;
+    margin-top: 36px;
+  }
+  
+  
+  .logoYt {
+    position: absolute;
+    width: 14%;
+    margin-left: 69%;
+    margin-top: 50px;
+  }
+  
+  .logoDs {
+    position: absolute;
+    width: 14%;
+    margin-left: 78%;
+    margin-top: 45px;
+  }
+  
+  .logoTk {
+    position: absolute;
+    width: 9%;
+    margin-left:89%;
+    margin-top: 50px;
+  }
+  /* NAVEGADOR */
+
+
+
 
   h1, h2, h3, p {
     color:white;
@@ -19,10 +141,6 @@ h4, ul, form, legend {
     color:white;
     font-family:Helvetica;
     list-style-type:none;
-}
-
-a {
-    text-decoration:none;
 }
 
 fieldset {
